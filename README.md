@@ -18,4 +18,4 @@ A tool to build charts with [Electome](http://www.electome.org) data.
 ### Features
 - Add bar charts.
 - Add pie charts.
-- ~Base64-encode the fonts (or whatever is necessary) to get them to work without being locally installed.~
+- ~~Base64-encode the fonts (or whatever is necessary) to get them to work without being locally installed.~~
