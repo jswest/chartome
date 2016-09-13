@@ -31,7 +31,7 @@ body {
   padding-bottom: 1em; }
   #primary-header h1 {
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 0.2em;
     line-height: 1;
     padding: 0;
@@ -88,7 +88,7 @@ body {
 .layout-header {
   border-bottom: 1px solid #373a3c;
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 0.1em;
   margin-bottom: 0.5em;
   text-transform: uppercase; }
@@ -145,8 +145,10 @@ input.form-control, .input-group-addon {
   cursor: pointer; }
 
 #saving-canvas {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1; }
 
 #chart-branding text {
@@ -205,5 +207,10 @@ input.form-control, .input-group-addon {
     height: 76px; }
   #color-picker .clear {
     clear: both; }
+
+.chart-interest-point-handles-toggle {
+  cursor: pointer; }
+  .chart-interest-point-handles-toggle.toggled {
+    opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */

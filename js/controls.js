@@ -387,7 +387,7 @@
 				var chartWidth = parseFloat( this._d3els.chart.attr( 'width' ) );
 				var chartHeight = parseFloat( this._d3els.chart.attr( 'height' ) );
 
-				var width = parseFloat( this._els.chartWidthInput.value ) || 1000;
+				var width = parseFloat( this._els.chartWidthInput.value ) || 1600;
 				var modifier = width / chartWidth;
 
 				this._d3els.chart
@@ -465,6 +465,8 @@
 		_bindInterestPointHandlesClick: function ( el ) {
 
 			var index = window.utilities.getIndexInParent( el.parentNode.parentNode );
+
+			el.classList.toggle( 'toggled' );
 
 			window.chart.toggleInputPointHandles( index );
 
