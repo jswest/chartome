@@ -1,0 +1,263 @@
+$red: #af4b4b;
+$orange: rgb(175,125,38);
+$yellow: #afaf00;
+$green: #4baf4b;
+$blue: #4b4baf;
+$violet: rgb(125,75,125);
+$white: #ffffff;
+$black: #373a3c;
+$grey: lighten( #eceff1, 1% );
+
+$sans1: "Montserrat";
+$sans2: "Merriweather Sans";
+
+body {
+	background-color: $grey;
+}
+
+.btn-primary {
+	background-color: $white;
+	border: none;
+	border-radius: 0;
+	color: $black;
+	font-size: 0.75em;
+	font-family: $sans1;
+	font-weight: 100;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	&:hover {
+		background-color: darken( $red, 25% );
+		border: 1px solid darken( $red, 25% );
+	}
+	&:active {
+		background-color: darken( $blue, 25% );
+		border: 1px solid darken( $blue, 25% );
+	}
+	&.disabled {
+		&:hover {
+			background-color: darken( $red, 25% );
+			border: 1px solid darken( $red, 25% );
+		}
+	}
+}
+.inactive {
+	display: none;
+}
+
+#primary-header {
+	background-color: $white;
+	border-bottom: 2px solid lighten( $black, 60% );
+	padding-top: 2em;
+	padding-bottom: 1em;
+	h1 {
+		font-size: 1em;
+		font-weight: 100;
+		letter-spacing: 0.2em;
+		line-height: 1;
+		padding: 0;
+		text-transform: uppercase;
+	}
+}
+
+#chart-type-chooser {
+	margin-top: 10em;
+	h1 {
+		font-family: $sans1;
+		font-weight: 800;
+		letter-spacing: 0.5rem;
+		margin-bottom: 1em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+#primary-content {
+	margin-top: 6em;
+}
+
+#chart-sizer {
+	padding-bottom: 66.67%;
+	position: relative;
+	width: 100%;
+	height: 0;
+	img {
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}
+#chart {
+	background-color: $white;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: block;
+	fill: $black;
+}
+#chart-title {
+	fill: $black;
+	font-family: $sans2;
+	font-weight: 800;
+}
+
+#chart-keys-list {
+	padding-left: 0;
+	li {
+		cursor: pointer;
+		list-style: none;
+		margin-left: 0;
+		margin-bottom: 0.5em;
+		opacity: 0.25;
+		&.active {
+			opacity: 1;
+		}
+	}
+}
+
+.layout-header {
+	border-bottom: 1px solid $black;
+	font-size: 2em;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.axis {
+	text {
+		fill: $black;
+		font-family: $sans2;
+		font-size: 12px;
+		font-weight: 100;
+		opacity: 0.75;
+	}
+	.domain {
+		opacity: 0;
+	}
+	line {
+		stroke: $grey;
+		stroke-width: 0.5px;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $sans1;
+}
+
+
+p.btn,
+label.btn {
+	font-family: $sans1;
+	font-weight: 100;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	width: 100%;
+}
+label {
+	font-family: $sans1;
+	font-size: 0.75em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+input.form-control, .input-group-addon {
+	background-color: $white;
+	border-radius: 0;
+	border: 1px solid transparentize( $black, 0.8 );
+	font-family: $sans2;
+	font-size: 0.75em;
+	&:disabled {
+		background-color: $grey;
+	}
+}
+#controls-form {
+	position: relative;
+}
+
+#csv-upload-input {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+#csv-upload-label {
+	cursor: pointer;
+}
+
+#saving-canvas {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+#chart-branding {
+	text {
+		font-family: $sans1;
+		font-weight: 100;
+		letter-spacing: 1.5px;
+		opacity: 0.5;
+		text-transform: uppercase;
+	}
+}
+
+.line {
+	fill: transparent;
+}
+
+.label {
+	cursor: move;
+}
+.label-text {
+	font-family: $sans2;
+	font-size: 12px;
+	font-weight: 800;
+	// letter-spacing: 2.4px;
+	// text-transform: uppercase;
+}
+.interest-point {
+	text {
+		fill: $black;
+		font-family: $sans2;
+		font-weight: 800;
+	}
+}
+
+#main-content {
+	&.blur {
+		-webkit-filter: blur( 10px );
+	}
+}
+
+#color-picker-background {
+	background-color: rgba( $white, 0.5 );
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1031;
+}
+#color-picker {
+	background-color: $white;
+	border-radius: 4px;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	width: 400px;
+	.block {
+		border: 10px solid $white;
+		border-radius: 40px;
+		box-sizing: border-box;
+		cursor: pointer;
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 76px;
+		height: 76px;
+	}
+	.clear {
+		clear: both;
+	}
+}

@@ -1,0 +1,208 @@
+body {
+  background-color: #eff1f3; }
+
+.btn-primary {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  color: #373a3c;
+  font-size: 0.75em;
+  font-family: "Montserrat";
+  font-weight: 100;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+  .btn-primary:hover {
+    background-color: #562525;
+    border: 1px solid #562525; }
+  .btn-primary:active {
+    background-color: #252556;
+    border: 1px solid #252556; }
+  .btn-primary.disabled:hover {
+    background-color: #562525;
+    border: 1px solid #562525; }
+
+.inactive {
+  display: none; }
+
+#primary-header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #d1d3d4;
+  padding-top: 2em;
+  padding-bottom: 1em; }
+  #primary-header h1 {
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    padding: 0;
+    text-transform: uppercase; }
+
+#chart-type-chooser {
+  margin-top: 10em; }
+  #chart-type-chooser h1 {
+    font-family: "Montserrat";
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase; }
+
+#primary-content {
+  margin-top: 6em; }
+
+#chart-sizer {
+  padding-bottom: 66.67%;
+  position: relative;
+  width: 100%;
+  height: 0; }
+  #chart-sizer img {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+
+#chart {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  fill: #373a3c; }
+
+#chart-title {
+  fill: #373a3c;
+  font-family: "Merriweather Sans";
+  font-weight: 800; }
+
+#chart-keys-list {
+  padding-left: 0; }
+  #chart-keys-list li {
+    cursor: pointer;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    opacity: 0.25; }
+    #chart-keys-list li.active {
+      opacity: 1; }
+
+.layout-header {
+  border-bottom: 1px solid #373a3c;
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+.axis text {
+  fill: #373a3c;
+  font-family: "Merriweather Sans";
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 0.75; }
+.axis .domain {
+  opacity: 0; }
+.axis line {
+  stroke: #eff1f3;
+  stroke-width: 0.5px; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat"; }
+
+p.btn,
+label.btn {
+  font-family: "Montserrat";
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  width: 100%; }
+
+label {
+  font-family: "Montserrat";
+  font-size: 0.75em;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+input.form-control, .input-group-addon {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 1px solid rgba(55, 58, 60, 0.2);
+  font-family: "Merriweather Sans";
+  font-size: 0.75em; }
+  input.form-control:disabled, .input-group-addon:disabled {
+    background-color: #eff1f3; }
+
+#controls-form {
+  position: relative; }
+
+#csv-upload-input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+#csv-upload-label {
+  cursor: pointer; }
+
+#saving-canvas {
+  opacity: 0;
+  position: absolute;
+  z-index: -1; }
+
+#chart-branding text {
+  font-family: "Montserrat";
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  opacity: 0.5;
+  text-transform: uppercase; }
+
+.line {
+  fill: transparent; }
+
+.label {
+  cursor: move; }
+
+.label-text {
+  font-family: "Merriweather Sans";
+  font-size: 12px;
+  font-weight: 800; }
+
+.interest-point text {
+  fill: #373a3c;
+  font-family: "Merriweather Sans";
+  font-weight: 800; }
+
+#main-content.blur {
+  -webkit-filter: blur(10px); }
+
+#color-picker-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031; }
+
+#color-picker {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; }
+  #color-picker .block {
+    border: 10px solid #ffffff;
+    border-radius: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 76px;
+    height: 76px; }
+  #color-picker .clear {
+    clear: both; }
+
+/*# sourceMappingURL=style.css.map */

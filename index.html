@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Enter the Chartome.</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+
+
+		<div id="main-content">
+
+			<header id="primary-header" class="navbar navbar-full navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="brand">Chartome</h1>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div id="primary-content" class="container">
+
+				<div id="chart-type-chooser">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="header-4">Enter the Chartome.</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 offset-sm-4">
+							<div id="chart-type-chooser-btn-group">
+								<button class="btn btn-primary btn-block" id="chart-type-chooser-area">Area chart</button>
+								<button class="btn btn-primary btn-block" id="chart-type-chooser-line">Line chart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="line-and-area-charter-wrapper" class="inactive">
+					<div class="row">
+						<div id="chart-wrapper" class="col-sm-9">
+							<h1 class="layout-header">Chart</h1>
+							<div id="chart-sizer">
+								<div class="svg-guts">
+									<svg id="chart" preserveAspectRatio></svg>
+								</div>
+								<canvas id="saving-canvas"></canvas>
+							</div>
+						</div>
+						<div id="controls-wrapper" class="col-sm-3">
+							<h1 class="layout-header">Controls</h1>
+							<form id="controls-form">
+								<div class="form-group">
+									<label id="csv-upload-label" class="btn btn-primary" for="csv-upload-input">Upload a CSV file</label>
+									<input id="csv-upload-input" type="file" accept=".csv">
+								</div>
+								<div class="form-group">
+									<label>Chart title</label>
+									<input id="chart-title-input" class="form-control post-upload-controls" disabled type="text">
+								</div>
+								<div class="form-group">
+									<label>Y-axis label</label>
+									<input id="chart-y-axis-label-input" class="form-control post-upload-controls" disabled type="text">
+								</div>
+								<div class="form-group">
+									<label>Y-axis maximum</label>
+									<div class="input-group">
+										<input id="chart-y-axis-max-input" class="form-control post-upload-controls" disabled type="text">
+										<div class="input-group-addon">%</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<ul id="chart-keys-list"></ul>
+								</div>
+								<div class="form-group">
+									<label>Aspect ratio (width:height)</label>
+									<input id="chart-aspect-ratio-input" class="form-control post-upload-controls" disabled type="text">
+								</div>
+								<div class="form-group">
+									<label>Chart width</label>
+									<input id="chart-width-input" class="form-control post-upload-controls" disabled type="text">
+								</div>
+								<div id="chart-interest-point-input-wrapper">
+									<div class="form-group">
+										<label>Add interest point</label>
+										<div class="input-group">
+											<input class="chart-interest-point-input form-control post-upload-controls" disabled type="text">
+											<div class="chart-interest-point-handles-toggle input-group-addon">●</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<p class="btn btn-primary disabled" id="save-chart-button">Save chart</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/underscore.min.js"></script>
+		<script src="js/vendor/d3.min.js"></script>
+		<script src="js/utilities.js"></script>
+		<script src="js/chart.js"></script>
+		<script src="js/controls.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
