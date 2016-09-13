@@ -174,6 +174,7 @@
 				colorblock.classList.add( 'color-block' );
 				colorblock.classList.add( 'input-group-addon' );
 				colorblock.style.backgroundColor = this._scales.color( i );
+				colorblock.innerHTML = '&nbsp;';
 				li.appendChild( colorblock );
 
 				var tagname = document.createElement( 'input' );

@@ -8,8 +8,10 @@ $white: #ffffff;
 $black: #373a3c;
 $grey: lighten( #eceff1, 1% );
 
-$sans1: "Montserrat";
-$sans2: "Merriweather Sans";
+$sans1: "Montserrat WF";
+$sans2: "Merriweather Sans WF";
+$svgsans1: "Montserrat SVGWF";
+$svgsans2: "Merriweather Sans SVGWF";
 
 body {
 	background-color: $grey;
@@ -22,7 +24,7 @@ body {
 	color: $black;
 	font-size: 0.75em;
 	font-family: $sans1;
-	font-weight: 100;
+	font-weight: 200;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	&:hover {
@@ -97,7 +99,7 @@ body {
 }
 #chart-title {
 	fill: $black;
-	font-family: $sans2;
+	font-family: $svgsans2;
 	font-weight: 800;
 }
 
@@ -127,7 +129,7 @@ body {
 .axis {
 	text {
 		fill: $black;
-		font-family: $sans2;
+		font-family: $svgsans2;
 		font-size: 12px;
 		font-weight: 100;
 		opacity: 0.75;
@@ -149,7 +151,7 @@ h1, h2, h3, h4, h5 {
 p.btn,
 label.btn {
 	font-family: $sans1;
-	font-weight: 100;
+	font-weight: 200;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	width: 100%;
@@ -157,7 +159,7 @@ label.btn {
 label {
 	font-family: $sans1;
 	font-size: 0.75em;
-	font-weight: 100;
+	font-weight: 200;
 	text-transform: uppercase;
 }
 input.form-control, .input-group-addon {
@@ -186,15 +188,15 @@ input.form-control, .input-group-addon {
 }
 
 #saving-canvas {
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
 	z-index: -1;
 }
 
 #chart-branding {
 	text {
-		font-family: $sans1;
-		font-weight: 100;
+		font-family: $svgsans1;
+		font-weight: 200;
 		letter-spacing: 1.5px;
 		opacity: 0.5;
 		text-transform: uppercase;
@@ -209,7 +211,7 @@ input.form-control, .input-group-addon {
 	cursor: move;
 }
 .label-text {
-	font-family: $sans2;
+	font-family: $svgsans2;
 	font-size: 12px;
 	font-weight: 800;
 	// letter-spacing: 2.4px;
@@ -218,7 +220,7 @@ input.form-control, .input-group-addon {
 .interest-point {
 	text {
 		fill: $black;
-		font-family: $sans2;
+		font-family: $svgsans2;
 		font-weight: 800;
 	}
 }
