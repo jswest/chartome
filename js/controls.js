@@ -94,6 +94,12 @@
 						// Parse the data.
 						this._data = d3.csvParse( e.target.result );
 
+						_.each( this._data, function ( d ) {
+							if ( d.date.indexOf( '00:00:00' ) === -1 ) {
+								d.date += ' 00:00:00';
+							}
+						} );
+
 						// Note that we've done it!
 						this._els.csvLabel.innerHTML = 'CSV uploaded.';
 
