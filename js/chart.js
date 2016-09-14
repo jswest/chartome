@@ -512,7 +512,7 @@
 		_buildScales: function ( colorScale ) {
 
 			this._scales = {
-				x: d3.scaleUtc(),
+				x: d3.scaleTime(),
 				y: d3.scaleLinear(),
 				color: colorScale
 			}
@@ -814,25 +814,15 @@
 			this._d3els.branding.attr( 'transform', window.utilities.getTranslateString( this._padding.left, ( this._padding.top + this._sizes.cheight + this._padding.branding.top + this._sizes.branding ) ) );
 
 			this._d3els.dataSource
-				.text( 'Data: ' + this._dataSource )
+				.text( this._dataSource )
 				.attr( 'text-anchor', 'end' )
 				.attr( 'x', this._sizes.cwidth )
 				.style( 'font-size', this._sizes.branding )
 				.style( 'fill', this._colors.branding );
 
-			// this._d3els.organizationLogo
-			// 	.attr( 'height', this._logoImageHeight )
-			// 	.attr( 'fill', 'transparent' )
-			// 	.style( 'background-image', this._logoImageUrl )
-			// 	.attr( 'width', this._sizes.branding )
-			// 	.attr( 'height', this._sizes.branding )
-			// 	.attr( 'x', 0 )
-			// 	.attr( 'y', -this._sizes.branding );
-
 			this._d3els.organizationName
 				.text( this._orgainizationName )
 				.attr( 'x', this._padding.branding.left )
-				// .attr( 'x', this._padding.branding.left + this._sizes.branding )
 				.style( 'font-size', this._sizes.branding )
 				.style( 'fill', this._colors.branding );
 
