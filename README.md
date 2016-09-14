@@ -17,7 +17,7 @@ date,racial issues,economy
 ...
 ```
 #### Text
-You can remove draggable text—interest point text and labels—by dragging it off screen. But be careful! It's hard to get it back. For axis text, you can remove by double-clicking it. Double-clicking it a second time on where the text used to be should return it to life.
+You can remove draggable text—interest point text and labels—by dragging it off screen. But be careful! It's hard to get it back. For axis text, you can remove by double-clicking it. Double-clicking it a second time on where the text used to be should return it to life. To change the color of the labels or the interest points, double click on them.
 
 #### Interest points
 Adjust the location of the interest point parts by dragging. For the line, you'll need to drag the handles on either end of the line. You can turn off the handles for the interest point lines by clicking on the dot to the right of the interest point input field. Clicking on that dot again will bring them back so you can contintue to move them around. You should remove the handles before you export.
@@ -31,7 +31,7 @@ Don't use it. Reload the page instead.
 ----
 
 ## Locale usage
-1. ~~Download and install [Merriweather Sans](https://www.fontsquirrel.com/fonts/merriweather-sans) and [Montserrat](https://www.fontsquirrel.com/fonts/montserrat). It is essentiaål that you do this for the charts to look right.~~
+1. ~~Download and install [Merriweather Sans](https://www.fontsquirrel.com/fonts/merriweather-sans) and [Montserrat](https://www.fontsquirrel.com/fonts/montserrat). It is essential that you do this for the charts to look right.~~
 2. Fire up a server
 3. Navigate to `localhost` on the correct port.
 4. Upload a CSV file and have some fun.
