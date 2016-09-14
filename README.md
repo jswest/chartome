@@ -42,7 +42,7 @@ Don't use it. Reload the page instead.
 ### Bugs
 - When you save a chart, you can no longer edit that chart.
 - When you save a chart, the scroll on the right- and bottom-sides goes nuts.
-- It appears that the days are slightly misaligned on line charts but not area charts.
+- ~~It appears that the days are slightly misaligned on line charts but not area charts.~~
 - When you change the aspect ratio, all kinds of odd things happen.
 
 ### Features
